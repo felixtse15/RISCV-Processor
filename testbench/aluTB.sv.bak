@@ -1,0 +1,12 @@
+module aluTB();
+	parameter WIDTH = 4;
+	logic [3:0] control;
+	logic signed [WIDTH - 1:0] a, b;
+	bit zero, sign;
+	logic signed [WIDTH - 1:0] result;
+	
+	alu dut(control, a, b, zero, sign, result);
+	
+	initial begin
+		control = 4'b0000; a = 4'b0111; b = 4'b0001; 
+	

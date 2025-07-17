@@ -1,0 +1,29 @@
+module extendunit(input  logic [2:0]  ImmSrc,
+				  input  logic [31:7] Instr,
+				  output logic [31:0] ImmExt);
+	
+	always_comb
+		case(ImmSrc)
+			// I-type
+			3'b000: ImmExt = {{20{Instr[31]}}, Instr[31:20]}; 
+			
+			// S-type
+			3'b001: ImmExt = {{20{Instr[31]}}, Instr[31:25], Instr[11:7]}; 
+			
+			// B-type
+			3'b010: begin
+				ImmExt = {{20{Instr[31]}}, Instr[7], Instr[30:25], Instr[11:8], 1'b0}; 
+				ImmExt = ImmExt << 1;	// multiplication by two for branch immediates, use arithmetic shift to preserve sign bit
+			end
+			
+			 // J-type
+			3'b011: ImmExt = {{12{Instr[31]}}, Instr[19:12], Instr[20], Instr[30:21], 1'b0};
+			
+			 // U-type
+			3'b100: ImmExt = {Instr[31:12], 12'b0};
+			
+			// default undefined
+			default: ImmExt = 32'bx;
+		endcase
+		
+endmodule

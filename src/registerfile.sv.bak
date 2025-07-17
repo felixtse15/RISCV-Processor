@@ -1,0 +1,26 @@
+module registerfile(input  logic        clk, resetn,
+					input  logic        RegWrite,
+					input  logic [4:0]  Rs1, Rs2, RdW,
+					input  logic [31:0] WD,
+					output logic [31:0] RD1, RD2);
+	logic [31:0] regfile [0:31];
+	integer i;
+	
+	// Read data on positive edge of clk
+	always_comb begin
+			assign RD1 = (Rs1 != 0) ? regfile[Rs1] : 32'b0;
+			assign RD2 = (Rs2 != 0) ? regfile[Rs2] : 32'b0;
+			assign regfile[0] = 32'b0;
+		end
+	
+	// Write data on negative edge of clk
+	always_ff @ (negedge clk)
+		if(!resetn)
+			for (i = 0; i < 32; i = i+1)
+				regfile[i] <= 0;
+		else if(RegWrite & (RdW != 0))
+			regfile[RdW] <= WD;
+
+endmodule
+
+

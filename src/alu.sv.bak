@@ -1,0 +1,34 @@
+module alu #(parameter WIDTH = 4)
+		  (input  logic        [3:0]  ALUControl,
+		   input  logic signed [WIDTH - 1:0] AluA, AluB,
+		   output bit                        ZERO, SIGN,
+		   output logic signed [WIDTH - 1:0] ALUResult);
+	
+	logic [WIDTH - 1:0] Sum;
+	bit Overflow;
+	bit isAdd; 
+	bit isSub; 
+	
+	assign isAdd = (ALUControl == 4'b0000);
+	assign isSub = (ALUControl == 4'b0001);
+	
+	assign Sum      = AluA + (ALUControl[0] ? ~ AluB : AluB) + ALUControl[0];   // add or sub using two's complement
+	assign Overflow = (isAdd & ~(AluA[WIDTH - 1] ^ AluB[WIDTH - 1]) & (AluA[WIDTH - 1] ^ Sum[WIDTH - 1])) | // signed addition overflow
+					  (isSub &  (AluA[WIDTH - 1] ^ AluB[WIDTH - 1]) & (AluA[WIDTH - 1] ^ Sum[WIDTH - 1]));  // signed subtraction overflow
+	assign ZERO 	= ~(|ALUResult);											// OR all bits of ALUResult, if zero then NOT produces 1
+	assign SIGN 	= ALUResult[WIDTH - 1];											// SIGN bit of ALUResult
+					  
+	always_comb
+		case(ALUControl)
+			4'b0000: ALUResult = Sum;									// add or subtract
+			4'b0010: ALUResult = AluA & AluB;							// and
+			4'b0011: ALUResult = AluA | AluB;							// or
+			4'b0100: ALUResult = AluA ^ AluB;							// xor
+			4'b0101: ALUResult = AluA < AluB;							// slt, slti
+			4'b0110: ALUResult = ($unsigned(AluA) < $unsigned(AluB));   // sltu, sltiu
+			4'b0111: ALUResult = AluA << AluB;							// sll, slli
+			4'b1000: ALUResult = AluA >> AluB;							// srl, srli
+			4'b1001: ALUResult = AluA >>> AluB;							// sra, srai
+			default: ALUResult = {WIDTH{1'bx}};
+		endcase
+endmodule
