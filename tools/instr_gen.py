@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# Copyright 2025 Felix Tse
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+
 
 # This program generates a text file containing a sequence of 16 random hexadecimal instructions to verify the RISCV Processor's 
 # functionality.
