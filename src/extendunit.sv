@@ -13,7 +13,7 @@ module extendunit(input  logic [2:0]  ImmSrc,
 			// B-type
 			3'b010: begin
 				ImmExt = {{20{Instr[31]}}, Instr[7], Instr[30:25], Instr[11:8], 1'b0}; 
-				ImmExt = ImmExt << 1;	// multiplication by two for branch immediates, use arithmetic shift to preserve sign bit
+				//ImmExt = ImmExt << 1;	// multiplication by two for branch immediates, use arithmetic shift to preserve sign bit
 			end
 			
 			 // J-type

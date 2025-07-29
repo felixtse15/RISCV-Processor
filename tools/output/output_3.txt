@@ -1,0 +1,17 @@
+INSTRNM: 20
+285E6D13, PC: 0, arithmetic immediate instruction!
+ori 26, 28, 645: [26] = 645
+01D4AF33, PC: 4, register type instruction!
+slt 30, 9, 29: [30] = 0
+04C40E97, PC: 8, auipc instruction!
+auipc 29, 19520Stored auipc: 19528
+1F385F37, PC: 12, lui instruction!
+lui 30, 523784192: Stored imm: 523784192
+01C00C6F, PC: 16, jal instruction!
+Jump target address: 44
+30948D93, PC: 44, arithmetic immediate instruction!
+addi 27, 9, 777: [27] = 777
+01C00D6F, PC: 48, jal instruction!
+Jump target address: 76
+01402A23, PC: 76, sw instruction!
+sw 20, 20(0), 0 stored at adr 20

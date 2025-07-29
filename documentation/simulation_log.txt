@@ -1,0 +1,1888 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project RISCV
+do riscv_bugtest1_jal.do
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.rvsimtb
+# vsim work.rvsimtb 
+# Start time: 11:05:06 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 105 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+run -all
+stop
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: frogg  Hostname: DESKTOP-2OCF1J4  ProcessID: 10360
+#           Attempting to use alternate WLF file "./wlftiqyiyy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftiqyiyy
+add wave -position insertpoint  \
+sim:/rvsimtb/reset
+add wave -position insertpoint  \
+sim:/rvsimtb/MemWriteM
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/InstrF
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/PCF
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/regfile/regfile
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/dmem/RAM
+restart -f
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/BranchJumpTargetE
+restart -f
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/c/PCSrcE
+restart -f
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/PCNextF
+restart -f
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/h/StallF
+restart -f
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv failed with 1 errors.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 1 failed with 1 error.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv failed with 1 errors.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 1 failed with 1 error.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+# ** Warning: (vsim-3017) D:/projects/RISCV/src/riscvprocessor.sv(27): [TFMPC] - Too few port connections. Expected 18, found 17.
+#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/h File: D:/projects/RISCV/src/hazardunit.sv
+# ** Warning: (vsim-3722) D:/projects/RISCV/src/riscvprocessor.sv(27): [TFMPC] - Missing connection for port 'RegWriteE'.
+run 350ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 350ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/h/lwStall
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/h/RegWriteE
+restart -f
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+# ** Error: (vsim-3389) D:/projects/RISCV/src/riscvprocessor.sv(23): Port 'RegWriteE' not found in the connected module (17th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/c File: D:/projects/RISCV/src/controller.sv
+# ** Fatal: (vsim-3365) D:/projects/RISCV/src/riscvprocessor.sv(23): Too many port connections. Expected 20, found 21.
+#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/c File: D:/projects/RISCV/src/controller.sv
+# FATAL ERROR while loading design
+run 300ps
+# No Design Loaded!
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+vsim work.rvsimtb
+# vsim work.rvsimtb 
+# Start time: 11:05:06 on Jul 29,2025
+# Loading sv_std.std
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: frogg  Hostname: DESKTOP-2OCF1J4  ProcessID: 10360
+#           Attempting to use alternate WLF file "./wlft9nznb8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9nznb8
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 300ps
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 175 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+::ContextView restart -f
+# bad command "restart": must be absname, absnameToFPath, absnameToReferencePath, cancelsearch, cget, configure, context, create, destroy, idByName, idsToReferencePaths, qinfo, qsize, query, root, search, or syncProc
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 185 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 225 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+restart -f
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 205 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 125 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 105 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart f-
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 225 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation failed
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(43)
+#    Time: 5 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 43
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv failed with 4 errors.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 1 failed with 4 errors.
+restart -f
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation failed
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(43)
+#    Time: 5 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 43
+add wave -position insertpoint  \
+sim:/rvsimtb/cycles
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation failed
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(43)
+#    Time: 5 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 43
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv failed with 3 errors.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 1 failed with 3 errors.
+restart -f
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation failed
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(43)
+#    Time: 5 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 43
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 225 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 85 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+ restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 165 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 185 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 145 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 235 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 205 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 85 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 225 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 145 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 175 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+ run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 185 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# 24 compiles, 0 failed with no errors.

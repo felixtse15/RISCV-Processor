@@ -1,0 +1,27 @@
+INSTRNM: 20
+01BA5D93, PC: 0, arithmetic immediate instruction!
+srli 27, 20, 27: [27] = 0
+3569CF13, PC: 4, arithmetic immediate instruction!
+xori 30, 19, 854: [30] = 854
+65F97993, PC: 8, arithmetic immediate instruction!
+andi 19, 18, 1631: [19] = 0
+4E19FC13, PC: 12, arithmetic immediate instruction!
+andi 24, 19, 1249: [24] = 0
+43E46D93, PC: 16, arithmetic immediate instruction!
+ori 27, 8, 1086: [27] = 1086
+0D902223, PC: 20, sw instruction!
+sw 25, 196(0), 0 stored at adr 196
+01CB8E63, PC: 24, branch instruction!
+funct3: 0, imm: 28beq 23, 28, 28Beq branch taken! Branch target: 5203CF3E93, PC: 52, arithmetic immediate instruction!
+sltiu 29, 30, 60: [29] = 0
+1FF96913, PC: 56, arithmetic immediate instruction!
+ori 18, 18, 511: [18] = 511
+01CA1663, PC: 60, branch instruction!
+funct3: 1, imm: 12bne 20, 28, 12016A1DB3, PC: 64, register type instruction!
+sll 27, 20, 22: [27] = 0
+6D6D8E13, PC: 68, arithmetic immediate instruction!
+addi 28, 27, 1750: [28] = 1750
+36ED2C93, PC: 72, arithmetic immediate instruction!
+slti 25, 26, 878: [25] = 1
+0D202A23, PC: 76, sw instruction!
+sw 18, 212(0), 511 stored at adr 212

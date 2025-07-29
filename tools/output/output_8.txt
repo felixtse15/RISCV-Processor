@@ -1,0 +1,17 @@
+INSTRNM: 20
+6A2B0B93, PC: 0, arithmetic immediate instruction!
+addi 23, 22, 1698: [23] = 1698
+01FF2D93, PC: 4, arithmetic immediate instruction!
+slti 27, 30, 31: [27] = 1
+0340046F, PC: 8, jal instruction!
+Jump target address: 60
+016E3DB3, PC: 60, register type instruction!
+sltu 27, 28, 22: [27] = 0
+111BF993, PC: 64, arithmetic immediate instruction!
+andi 19, 23, 273: [19] = 0
+00400C6F, PC: 68, jal instruction!
+Jump target address: 72
+6DCBAA93, PC: 72, arithmetic immediate instruction!
+slti 21, 23, 1756: [21] = 1
+09E02023, PC: 76, sw instruction!
+sw 30, 128(0), 0 stored at adr 128

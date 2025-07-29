@@ -1,0 +1,29 @@
+INSTRNM: 20
+0B2DB913, PC: 0, arithmetic immediate instruction!
+sltiu 18, 27, 178: [18] = 1
+2D5CC993, PC: 4, arithmetic immediate instruction!
+xori 19, 25, 725: [19] = 725
+0F702A23, PC: 8, sw instruction!
+sw 23, 244(0), 0 stored at adr 244
+00BD5D93, PC: 12, arithmetic immediate instruction!
+srli 27, 26, 11: [27] = 0
+419B5CB3, PC: 16, register type instruction!
+sra 25, 22, 25: [25] = 0
+39520997, PC: 20, auipc instruction!
+auipc 19, 234784Stored auipc: 234804
+363C3E93, PC: 24, arithmetic immediate instruction!
+sltiu 29, 24, 867: [29] = 1
+01599C13, PC: 28, arithmetic immediate instruction!
+slli 24, 19, 21: [24] = 2793406464
+71306F13, PC: 32, arithmetic immediate instruction!
+ori 30, 0, 1811: [30] = 1811
+016F6F33, PC: 36, register type instruction!
+sra 30, 30, 22: [30] = 1811
+01C00D6F, PC: 40, jal instruction!
+Jump target address: 68
+0B3C7D93, PC: 68, arithmetic immediate instruction!
+andi 27, 24, 179: [27] = 0
+41CBD4B3, PC: 72, register type instruction!
+sra 9, 23, 28: [9] = 0
+08802023, PC: 76, sw instruction!
+sw 8, 128(0), 0 stored at adr 128

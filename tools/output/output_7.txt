@@ -1,0 +1,40 @@
+INSTRNM: 20
+7DE47E93, PC: 0, arithmetic immediate instruction!
+andi 29, 8, 2014: [29] = 0
+424B7E13, PC: 4, arithmetic immediate instruction!
+andi 28, 22, 1060: [28] = 0
+515E6B13, PC: 8, arithmetic immediate instruction!
+ori 22, 28, 1301: [22] = 1301
+01CCFE33, PC: 12, register type instruction!
+and 28, 25, 28: [28] = 0
+2BDB2A13, PC: 16, arithmetic immediate instruction!
+slti 20, 22, 701: [20] = 0
+4AB4B413, PC: 20, arithmetic immediate instruction!
+sltiu 8, 9, 1195: [8] = 1
+1E5CAD93, PC: 24, arithmetic immediate instruction!
+slti 27, 25, 485: [27] = 1
+0EAE3F13, PC: 28, arithmetic immediate instruction!
+sltiu 30, 28, 234: [30] = 1
+07602C23, PC: 32, sw instruction!
+sw 22, 120(0), 1301 stored at adr 120
+0B502A23, PC: 36, sw instruction!
+sw 21, 180(0), 0 stored at adr 180
+3DBBBD93, PC: 40, arithmetic immediate instruction!
+sltiu 27, 23, 987: [27] = 1
+0D6C4493, PC: 44, arithmetic immediate instruction!
+xori 9, 24, 214: [9] = 214
+01A9F433, PC: 48, register type instruction!
+and 8, 19, 26: [8] = 0
+621EAF13, PC: 52, arithmetic immediate instruction!
+slti 30, 29, 1569: [30] = 1
+007B1E13, PC: 56, arithmetic immediate instruction!
+slli 28, 22, 7: [28] = 166528
+017E7B33, PC: 60, register type instruction!
+and 22, 28, 23: [22] = 0
+01AF4463, PC: 64, branch instruction!
+funct3: 4, imm: 8blt 30, 26, 805B02023, PC: 68, sw instruction!
+sw 27, 64(0), 1 stored at adr 64
+7194AA93, PC: 72, arithmetic immediate instruction!
+slti 21, 9, 1817: [21] = 1
+09A02623, PC: 76, sw instruction!
+sw 26, 140(0), 0 stored at adr 140

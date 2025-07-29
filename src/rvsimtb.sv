@@ -2,6 +2,7 @@ module rvsimtb();
 
 	logic clk;
 	logic reset;
+	logic cycles;
 	logic [31:0] WriteDataM, ALUResultM;
 	logic MemWriteM;
 
@@ -11,6 +12,7 @@ module rvsimtb();
 	// initialize test, pulse reset
 	initial begin
 		$display("Test started");
+		cycles <= 0;
 		reset <= 1;
 	       	#8;
 	       	reset <= 0;
@@ -19,6 +21,7 @@ module rvsimtb();
 	// generate clock to sequence tests
 	always begin
 		clk <= 1;
+		cycles +=1;
 		#5;
 		clk <= 0;
 		#5;
@@ -26,14 +29,17 @@ module rvsimtb();
 	
 	// automatically check output
 	always @(negedge clk) begin
-		if(MemWriteM && (ALUResultM === 76)) begin
-			if(WriteDataM === 49) begin
+		if(MemWriteM && (ALUResultM === 212) && cycles < 500) begin
+			if(WriteDataM === 511) begin
 				$display("Simulation succeeded");
 				$stop;
 			end else begin
 				$display("Simulation failed");
 				$stop;
 			end
+		end else if (cycles >= 500) begin
+			$display("Simulation failed");
+			$stop;
 		end
 	end
 	

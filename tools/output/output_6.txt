@@ -1,0 +1,9 @@
+INSTRNM: 20
+713E6A13, PC: 0, arithmetic immediate instruction!
+ori 20, 28, 1811: [20] = 1811
+04400D6F, PC: 4, jal instruction!
+Jump target address: 72
+018B1D13, PC: 72, arithmetic immediate instruction!
+slli 26, 22, 24: [26] = 0
+01902C23, PC: 76, sw instruction!
+sw 25, 24(0), 0 stored at adr 24

@@ -7,16 +7,16 @@
 				    output logic       ResultSrcE0,
 				    output logic [1:0] ResultSrcW,
 				    output logic       MemWriteM,
-				    output logic       PCJumpSrcE,PCSrcE,
+				    output logic       PCJumpSrcD, PCJumpSrcE, PCSrcE,
 				    output logic       ALUSrcAE, 
 				    output logic [1:0] ALUSrcBE,
-				    output logic       RegWriteM, RegWriteW,
+				    output logic       RegWriteE, RegWriteM, RegWriteW,
 				    output logic [2:0] ImmSrcD,
 				    output logic [3:0] ALUControlE);
 
 	logic [1:0] ALUOp;
 	logic       RegWriteD, MemWriteD, JumpD, BranchD;
-	logic       RegWriteE, MemWriteE, JumpE, BranchE;
+	logic       MemWriteE, JumpE, BranchE;
 	logic [1:0] ResultSrcD, ResultSrcE, ResultSrcM;
 	logic [3:0] ALUControlD;
 	logic       ALUSrcAD; 
@@ -33,8 +33,8 @@
 	aludecoder aludec(.opcodeb5(opcode[5]), .funct3(funct3), .funct7b5(funct7b5), .ALUOp(ALUOp), 
 					  .ALUControlD(ALUControlD));
 	
-	ctrlpiperegD_Ex cpipregDEx(.clk(clk), .reset(reset), .clear(FlushE), .ResultSrcD(ResultSrcD), .RegWriteD(RegWriteD), .MemWriteD(MemWriteD), .JumpD(JumpD), .BranchD(BranchD), .ALUControlD(ALUControlD), .ALUSrcAD(ALUSrcAD), .ALUSrcBD(ALUSrcBD), .funct3D(funct3),
-							   .ResultSrcE(ResultSrcE), .RegWriteE(RegWriteE), .MemWriteE(MemWriteE), .JumpE(JumpE), .BranchE(BranchE), .ALUControlE(ALUControlE), .ALUSrcAE(ALUSrcAE), .ALUSrcBE(ALUSrcBE), .funct3E(funct3E));
+	ctrlpiperegD_Ex cpipregDEx(.clk(clk), .reset(reset), .clear(FlushE), .ResultSrcD(ResultSrcD), .RegWriteD(RegWriteD), .MemWriteD(MemWriteD), .JumpD(JumpD), .BranchD(BranchD), .ALUControlD(ALUControlD), .ALUSrcAD(ALUSrcAD), .ALUSrcBD(ALUSrcBD), .PCJumpSrcD(PCJumpSrcD), .funct3D(funct3),
+							   .ResultSrcE(ResultSrcE), .RegWriteE(RegWriteE), .MemWriteE(MemWriteE), .JumpE(JumpE), .BranchE(BranchE), .ALUControlE(ALUControlE), .ALUSrcAE(ALUSrcAE), .ALUSrcBE(ALUSrcBE), .PCJumpSrcE(PCJumpSrcE), .funct3E(funct3E));
 			
 	ctrlpiperegEx_M cpipregExM(.clk(clk), .reset(reset), .RegWriteE(RegWriteE), .ResultSrcE(ResultSrcE), .MemWriteE(MemWriteE),
 							   .RegWriteM(RegWriteM), .ResultSrcM(ResultSrcM), .MemWriteM(MemWriteM));
@@ -49,13 +49,13 @@
 			SignR      = funct3E[0] ^ SIGNE;
 			BranchR    = funct3E[2] ? (SignR) : (ZeroR);
 			PCSrcE     = (BranchR & BranchE) | JumpE;
-			PCJumpSrcE = (opcode == 1100111) ? 1 : 0;
+			PCJumpSrcD = (opcode == 7'b1100111) ? 1 : 0;
 		end else begin
 			ZeroR      = 0;
 			SignR      = 0;
 			BranchR    = 0;
 			PCSrcE     = 0;
-			PCJumpSrcE = 0;
+			PCJumpSrcD = 0;
 		end
 	end
 endmodule

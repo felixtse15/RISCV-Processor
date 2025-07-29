@@ -1,0 +1,421 @@
+starting main
+Run 1 ***************
+
+andi 19 19 182 True
+Instr 01 hex 0B69F993
+srai 28 23 4 True
+Instr 02 hex 024BDE13
+sw 19 160 ( 0 ) False
+Instr 03 hex 0B302023
+sw 19 100 ( 0 ) False
+Instr 04 hex 07302223
+sw 28 12 ( 0 ) False
+Instr 05 hex 01C02623
+addi 25 24 1909 True
+Instr 06 hex 775C0C93
+sw 28 8 ( 0 ) False
+Instr 07 hex 01C02423
+beq 28 28 36 False
+Instr 08 hex 03CE0263
+jalr 8 0 68 True
+Instr 09 hex 04400467
+sltiu 22 24 950 True
+Instr 10 hex 3B6C3B13
+srli 30 30 3 True
+Instr 11 hex 003F5F13
+addi 30 19 1737 True
+Instr 12 hex 6C998F13
+slti 23 25 1256 True
+Instr 13 hex 4E8CAB93
+sw 28 12 ( 0 ) False
+Instr 14 hex 01C02623
+bne 23 23 20 False
+Instr 15 hex 017B9A63
+sw 8 248 ( 0 ) False
+Instr 16 hex 0E802C23
+srai 29 8 9 True
+Instr 17 hex 02945E93
+ori 20 18 1202 True
+Instr 18 hex 4B296A13
+sw 29 232 ( 0 ) False
+Instr 19 hex 0FD02423
+sw 25 248 ( 0 ) False
+Instr 20 hex 0F902C23
+Run 2 ***************
+
+sltiu 18 27 178 True
+Instr 01 hex 0B2DB913
+xori 19 25 725 True
+Instr 02 hex 2D5CC993
+sw 23 244 ( 0 ) False
+Instr 03 hex 0F702A23
+srli 27 26 11 True
+Instr 04 hex 00BD5D93
+sra 25 22 25 False
+Instr 05 hex 419B5CB3
+auipc 19 234784 True
+Instr 06 hex 39520997
+sltiu 29 24 867 True
+Instr 07 hex 363C3E93
+slli 24 19 21 True
+Instr 08 hex 01599C13
+ori 30 0 1811 True
+Instr 09 hex 71306F13
+or 30 30 22 False
+Instr 10 hex 016F6F33
+jal 26 28 True
+Instr 11 hex 01C00D6F
+sw 29 48 ( 0 ) False
+Instr 12 hex 03D02823
+sltiu 9 27 1785 True
+Instr 13 hex 6F9DB493
+addi 19 27 1884 True
+Instr 14 hex 75CD8993
+auipc 29 185008 True
+Instr 15 hex 2D2B0E97
+srli 21 29 11 True
+Instr 16 hex 00BEDA93
+andi 21 29 1193 True
+Instr 17 hex 4A9EFA93
+andi 27 24 179 True
+Instr 18 hex 0B3C7D93
+sra 9 23 28 False
+Instr 19 hex 41CBD4B3
+sw 8 128 ( 0 ) False
+Instr 20 hex 08802023
+Run 3 ***************
+
+ori 26 28 645 True
+Instr 01 hex 285E6D13
+slt 30 9 29 False
+Instr 02 hex 01D4AF33
+auipc 29 19520 True
+Instr 03 hex 04C40E97
+lui 30 127877 True
+Instr 04 hex 1F385F37
+jal 24 28 True
+Instr 05 hex 01C00C6F
+sltiu 22 27 1567 True
+Instr 06 hex 61FDBB13
+sll 24 20 22 False
+Instr 07 hex 016A1C33
+slti 19 30 596 True
+Instr 08 hex 254F2993
+or 24 19 20 False
+Instr 09 hex 0149EC33
+auipc 21 215110 True
+Instr 10 hex 34846A97
+jal 26 16 True
+Instr 11 hex 01000D6F
+addi 27 9 777 True
+Instr 12 hex 30948D93
+jal 26 28 True
+Instr 13 hex 01C00D6F
+slti 9 22 1937 True
+Instr 14 hex 791B2493
+srl 28 21 9 False
+Instr 15 hex 009ADE33
+slti 9 23 1732 True
+Instr 16 hex 6C4BA493
+sw 26 236 ( 0 ) False
+Instr 17 hex 0FA02623
+slt 27 29 30 False
+Instr 18 hex 01EEADB3
+ori 21 29 1185 True
+Instr 19 hex 4A1EEA93
+sw 20 20 ( 0 ) False
+Instr 20 hex 01402A23
+Run 4 ***************
+
+slli 8 25 9 True
+Instr 01 hex 009C9413
+sw 20 36 ( 0 ) False
+Instr 02 hex 03402223
+sw 8 56 ( 0 ) False
+Instr 03 hex 02802C23
+andi 27 29 1772 True
+Instr 04 hex 6ECEFD93
+srli 9 0 18 True
+Instr 05 hex 01205493
+sltiu 19 25 866 True
+Instr 06 hex 362CB993
+andi 26 9 400 True
+Instr 07 hex 1904FD13
+slti 19 21 1326 True
+Instr 08 hex 52EAA993
+ori 25 26 291 True
+Instr 09 hex 123D6C93
+xori 25 27 1825 True
+Instr 10 hex 721DCC93
+sw 29 48 ( 0 ) False
+Instr 11 hex 03D02823
+ori 9 0 922 True
+Instr 12 hex 39A06493
+sw 20 204 ( 0 ) False
+Instr 13 hex 0D402623
+slt 21 8 20 False
+Instr 14 hex 01442AB3
+sll 28 9 26 False
+Instr 15 hex 01A49E33
+ori 29 24 1133 True
+Instr 16 hex 46DC6E93
+jalr 26 0 72 True
+Instr 17 hex 04800D67
+srli 20 0 4 True
+Instr 18 hex 00405A13
+slti 27 29 922 True
+Instr 19 hex 39AEAD93
+sw 26 188 ( 0 ) False
+Instr 20 hex 0BA02E23
+Run 5 ***************
+
+slti 20 30 485 True
+Instr 01 hex 1E5F2A13
+sw 23 48 ( 0 ) False
+Instr 02 hex 03702823
+ori 27 0 1859 True
+Instr 03 hex 74306D93
+andi 21 8 1959 True
+Instr 04 hex 7A747A93
+ori 22 9 1771 True
+Instr 05 hex 6EB4EB13
+andi 25 19 1698 True
+Instr 06 hex 6A29FC93
+or 28 28 21 False
+Instr 07 hex 015E6E33
+sw 23 156 ( 0 ) False
+Instr 08 hex 09702E23
+srl 23 23 18 False
+Instr 09 hex 012BDBB3
+sub 30 29 27 False
+Instr 10 hex 41BE8F33
+bne 8 22 20 False
+Instr 11 hex 01641A63
+jalr 29 0 76 True
+Instr 12 hex 04C00EE7
+beq 24 19 16 False
+Instr 13 hex 013C0863
+sltiu 18 21 897 True
+Instr 14 hex 381AB913
+xor 23 26 8 False
+Instr 15 hex 008D4BB3
+lui 24 232350 True
+Instr 16 hex 38B9EC37
+sw 23 256 ( 0 ) False
+Instr 17 hex 11702023
+andi 25 25 1511 True
+Instr 18 hex 5E7CFC93
+srai 30 8 26 True
+Instr 19 hex 03A45F13
+sw 18 12 ( 0 ) False
+Instr 20 hex 01202623
+Run 6 ***************
+
+ori 20 28 1811 True
+Instr 01 hex 713E6A13
+jal 26 68 True
+Instr 02 hex 04400D6F
+sll 23 22 23 False
+Instr 03 hex 017B1BB3
+blt 29 23 32 False
+Instr 04 hex 037EC063
+srai 8 22 12 True
+Instr 05 hex 02CB5413
+xori 23 19 1282 True
+Instr 06 hex 5029CB93
+sw 29 156 ( 0 ) False
+Instr 07 hex 09D02E23
+slli 18 24 25 True
+Instr 08 hex 019C1913
+sw 25 152 ( 0 ) False
+Instr 09 hex 09902C23
+sw 18 208 ( 0 ) False
+Instr 10 hex 0D202823
+slt 18 23 8 False
+Instr 11 hex 008BA933
+sltiu 21 30 1688 True
+Instr 12 hex 698F3A93
+andi 29 18 1394 True
+Instr 13 hex 57297E93
+slti 9 18 531 True
+Instr 14 hex 21392493
+jalr 18 0 76 True
+Instr 15 hex 04C00967
+jalr 25 0 72 True
+Instr 16 hex 04800CE7
+srai 24 18 25 True
+Instr 17 hex 03995C13
+sll 8 24 19 False
+Instr 18 hex 013C1433
+slli 26 22 24 True
+Instr 19 hex 018B1D13
+sw 25 24 ( 0 ) False
+Instr 20 hex 01902C23
+Run 7 ***************
+
+andi 29 8 2014 True
+Instr 01 hex 7DE47E93
+andi 28 22 1060 True
+Instr 02 hex 424B7E13
+ori 22 28 1301 True
+Instr 03 hex 515E6B13
+and 28 25 28 False
+Instr 04 hex 01CCFE33
+slti 20 22 701 True
+Instr 05 hex 2BDB2A13
+sltiu 8 9 1195 True
+Instr 06 hex 4AB4B413
+slti 27 25 485 True
+Instr 07 hex 1E5CAD93
+sltiu 30 28 234 True
+Instr 08 hex 0EAE3F13
+sw 22 120 ( 0 ) False
+Instr 09 hex 07602C23
+sw 21 180 ( 0 ) False
+Instr 10 hex 0B502A23
+sltiu 27 23 987 True
+Instr 11 hex 3DBBBD93
+xori 9 24 214 True
+Instr 12 hex 0D6C4493
+and 8 19 26 False
+Instr 13 hex 01A9F433
+slti 30 29 1569 True
+Instr 14 hex 621EAF13
+slli 28 22 7 True
+Instr 15 hex 007B1E13
+and 22 28 23 False
+Instr 16 hex 017E7B33
+blt 30 26 8 False
+Instr 17 hex 01AF4463
+sw 27 64 ( 0 ) False
+Instr 18 hex 05B02023
+slti 21 9 1817 True
+Instr 19 hex 7194AA93
+sw 26 140 ( 0 ) False
+Instr 20 hex 09A02623
+Run 8 ***************
+
+addi 23 22 1698 True
+Instr 01 hex 6A2B0B93
+slti 27 30 31 True
+Instr 02 hex 01FF2D93
+jal 8 52 True
+Instr 03 hex 0340046F
+or 24 23 22 False
+Instr 04 hex 016BEC33
+sw 29 4 ( 0 ) False
+Instr 05 hex 01D02223
+slti 19 28 814 True
+Instr 06 hex 32EE2993
+auipc 26 223599 True
+Instr 07 hex 3696FD17
+slli 24 23 27 True
+Instr 08 hex 01BB9C13
+addi 28 20 2040 True
+Instr 09 hex 7F8A0E13
+addi 27 27 510 True
+Instr 10 hex 1FED8D93
+slli 9 22 27 True
+Instr 11 hex 01BB1493
+sll 25 20 9 False
+Instr 12 hex 009A1CB3
+srli 22 20 20 True
+Instr 13 hex 014A5B13
+andi 9 21 364 True
+Instr 14 hex 16CAF493
+srli 28 29 9 True
+Instr 15 hex 009EDE13
+sltu 27 28 22 False
+Instr 16 hex 016E3DB3
+andi 19 23 273 True
+Instr 17 hex 111BF993
+jal 24 4 True
+Instr 18 hex 00400C6F
+slti 21 23 1756 True
+Instr 19 hex 6DCBAA93
+sw 30 128 ( 0 ) False
+Instr 20 hex 09E02023
+Run 9 ***************
+
+addi 30 26 1393 True
+Instr 01 hex 571D0F13
+addi 23 30 776 True
+Instr 02 hex 308F0B93
+addi 18 24 1643 True
+Instr 03 hex 66BC0913
+auipc 27 72922 True
+Instr 04 hex 11CDAD97
+jal 21 32 True
+Instr 05 hex 02000AEF
+or 22 9 18 False
+Instr 06 hex 0124EB33
+lw 9 36 ( 0 ) True
+Instr 07 hex 02402483
+beq 24 28 36 False
+Instr 08 hex 03CC0263
+sra 30 26 20 False
+Instr 09 hex 414D5F33
+xori 21 24 962 True
+Instr 10 hex 3C2C4A93
+addi 18 30 1839 True
+Instr 11 hex 72FF0913
+addi 21 18 297 True
+Instr 12 hex 12990A93
+addi 9 9 777 True
+Instr 13 hex 30948493
+addi 21 24 632 True
+Instr 14 hex 278C0A93
+srli 19 9 0 True
+Instr 15 hex 0004D993
+sw 9 196 ( 0 ) False
+Instr 16 hex 0C902223
+addi 25 0 1893 True
+Instr 17 hex 76500C93
+ori 23 20 1963 True
+Instr 18 hex 7ABA6B93
+sw 22 108 ( 0 ) False
+Instr 19 hex 07602623
+sw 21 168 ( 0 ) False
+Instr 20 hex 0B502423
+Run 10 ***************
+
+srli 27 20 27 True
+Instr 01 hex 01BA5D93
+xori 30 19 854 True
+Instr 02 hex 3569CF13
+andi 19 18 1631 True
+Instr 03 hex 65F97993
+andi 24 19 1249 True
+Instr 04 hex 4E19FC13
+ori 27 8 1086 True
+Instr 05 hex 43E46D93
+sw 25 196 ( 0 ) False
+Instr 06 hex 0D902223
+beq 23 28 28 False
+Instr 07 hex 01CB8E63
+sra 8 20 28 False
+Instr 08 hex 41CA5433
+addi 8 8 5 True
+Instr 09 hex 00540413
+addi 28 9 1354 True
+Instr 10 hex 54A48E13
+sltu 18 27 22 False
+Instr 11 hex 016DB933
+slli 21 27 7 True
+Instr 12 hex 007D9A93
+ori 21 0 1422 True
+Instr 13 hex 58E06A93
+sltiu 29 30 60 True
+Instr 14 hex 03CF3E93
+ori 18 18 511 True
+Instr 15 hex 1FF96913
+bne 20 28 12 False
+Instr 16 hex 01CA1663
+sll 27 20 22 False
+Instr 17 hex 016A1DB3
+addi 28 27 1750 True
+Instr 18 hex 6D6D8E13
+slti 25 26 878 True
+Instr 19 hex 36ED2C93
+sw 18 212 ( 0 ) False
+Instr 20 hex 0D202A23

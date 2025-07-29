@@ -1,0 +1,39 @@
+INSTRNM: 20
+009C9413, PC: 0, arithmetic immediate instruction!
+slli 8, 25, 9: [8] = 0
+03402223, PC: 4, sw instruction!
+sw 20, 36(0), 0 stored at adr 36
+02802C23, PC: 8, sw instruction!
+sw 8, 56(0), 0 stored at adr 56
+6ECEFD93, PC: 12, arithmetic immediate instruction!
+andi 27, 29, 1772: [27] = 0
+01205493, PC: 16, arithmetic immediate instruction!
+srli 9, 0, 18: [9] = 0
+362CB993, PC: 20, arithmetic immediate instruction!
+sltiu 19, 25, 866: [19] = 1
+1904FD13, PC: 24, arithmetic immediate instruction!
+andi 26, 9, 400: [26] = 0
+52EAA993, PC: 28, arithmetic immediate instruction!
+slti 19, 21, 1326: [19] = 1
+123D6C93, PC: 32, arithmetic immediate instruction!
+ori 25, 26, 291: [25] = 291
+721DCC93, PC: 36, arithmetic immediate instruction!
+xori 25, 27, 1825: [25] = 1825
+03D02823, PC: 40, sw instruction!
+sw 29, 48(0), 0 stored at adr 48
+39A06493, PC: 44, arithmetic immediate instruction!
+ori 9, 0, 922: [9] = 922
+0D402623, PC: 48, sw instruction!
+sw 20, 204(0), 0 stored at adr 204
+01442AB3, PC: 52, register type instruction!
+slt 21, 8, 20: [21] = 0
+01A49E33, PC: 56, register type instruction!
+sll 28, 9, 26: [28] = 922
+46DC6E93, PC: 60, arithmetic immediate instruction!
+ori 29, 24, 1133: [29] = 1133
+04800D67, PC: 64, jalr instruction!
+Jump target address: 72
+39AEAD93, PC: 72, arithmetic immediate instruction!
+slti 27, 29, 922: [27] = 0
+0BA02E23, PC: 76, sw instruction!
+sw 26, 188(0), 68 stored at adr 188

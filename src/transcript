@@ -1,8 +1,33 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading project RISCVIMF
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
 vsim work.rvsimtb
 # vsim work.rvsimtb 
-# Start time: 16:32:10 on Jul 08,2025
+# Start time: 12:30:10 on Jul 27,2025
 # Loading sv_std.std
 # Loading work.rvsimtb
 # Loading work.top
@@ -28,176 +53,45 @@ vsim work.rvsimtb
 # Loading work.hazardunit
 # Loading work.instructionmem
 # Loading work.datamem
-riscvtest_bug1_RdD.do
-# couldn't execute ".\riscvtest_bug1_RdD.do": no such file or directory
-do riscvtest_bug1_RdD.do
+add wave -position insertpoint  \
+sim:/rvsimtb/clk
+add wave -position insertpoint  \
+sim:/rvsimtb/reset
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/InstrF
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/PCF
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/regfile/regfile
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/dmem/RAM
+run 300ps
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/MemWriteM
+restart -f
+run 300ps
+# Test started
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/RegWriteW
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/PCNextF
+restart -f
 run 250ps
 # Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
-# Compile of datamem.sv was successful.
-# Compile of datapath.sv was successful.
-# Compile of extendunit.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of hazardunit.sv was successful.
-# Compile of instructionmem.sv was successful.
-# Compile of maindecoder.sv was successful.
-# Compile of mux2.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of piperegD_Ex.sv was successful.
-# Compile of piperegEx_M.sv was successful.
-# Compile of piperegF_D.sv was successful.
-# Compile of piperegM_W.sv was successful.
-# Compile of registerfile.sv was successful.
-# Compile of riscvprocessor.sv was successful.
-# Compile of rvsimtb.sv was successful.
-# Compile of top.sv was successful.
-# Compile of adder.sv was successful.
-# Compile of alu.sv was successful.
-# Compile of aludecoder.sv was successful.
-# Compile of controller.sv was successful.
-# 24 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/c/JumpD
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/BranchJumpTargetE
 restart -f
-# Loading work.rvsimtb
-# Loading work.top
-# Loading work.riscvprocessor
-# Loading work.controller
-# Loading work.maindecoder
-# Loading work.aludecoder
-# Loading work.ctrlpiperegD_Ex
-# Loading work.ctrlpiperegEx_M
-# Loading work.ctrlpiperegM_W
-# Loading work.datapath
-# Loading work.mux2
-# Loading work.programcounter
-# Loading work.adder
-# Loading work.piperegF_D
-# Loading work.registerfile
-# Loading work.extendunit
-# Loading work.piperegD_Ex
-# Loading work.mux3
-# Loading work.alu
-# Loading work.piperegEx_M
-# Loading work.piperegM_W
-# Loading work.hazardunit
-# Loading work.instructionmem
-# Loading work.datamem
-run 100ps
-# Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
-# Compile of datamem.sv was successful.
-# Compile of datapath.sv was successful.
-# Compile of extendunit.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of hazardunit.sv was successful.
-# Compile of instructionmem.sv was successful.
-# Compile of maindecoder.sv was successful.
-# Compile of mux2.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of piperegD_Ex.sv was successful.
-# Compile of piperegEx_M.sv was successful.
-# Compile of piperegF_D.sv was successful.
-# Compile of piperegM_W.sv was successful.
-# Compile of registerfile.sv was successful.
-# Compile of riscvprocessor.sv was successful.
-# Compile of rvsimtb.sv was successful.
-# Compile of top.sv was successful.
-# Compile of adder.sv was successful.
-# Compile of alu.sv was successful.
-# Compile of aludecoder.sv was successful.
-# Compile of controller.sv was successful.
-# 24 compiles, 0 failed with no errors.
-restart -f
-# Loading work.rvsimtb
-# Loading work.top
-# Loading work.riscvprocessor
-# Loading work.controller
-# Loading work.maindecoder
-# Loading work.aludecoder
-# Loading work.ctrlpiperegD_Ex
-# Loading work.ctrlpiperegEx_M
-# Loading work.ctrlpiperegM_W
-# Loading work.datapath
-# Loading work.mux2
-# Loading work.programcounter
-# Loading work.adder
-# Loading work.piperegF_D
-# Loading work.registerfile
-# Loading work.extendunit
-# Loading work.piperegD_Ex
-# Loading work.mux3
-# Loading work.alu
-# Loading work.piperegEx_M
-# Loading work.piperegM_W
-# Loading work.hazardunit
-# Loading work.instructionmem
-# Loading work.datamem
-run 250ps
-# Test started
-restart -f
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
-# Compile of datamem.sv was successful.
-# Compile of datapath.sv was successful.
-# Compile of extendunit.sv was successful.
-# Compile of flopenr.sv was successful.
-# Compile of hazardunit.sv was successful.
-# Compile of instructionmem.sv was successful.
-# Compile of maindecoder.sv was successful.
-# Compile of mux2.sv was successful.
-# Compile of mux3.sv was successful.
-# Compile of piperegD_Ex.sv was successful.
-# Compile of piperegEx_M.sv was successful.
-# Compile of piperegF_D.sv was successful.
-# Compile of piperegM_W.sv was successful.
-# Compile of registerfile.sv was successful.
-# Compile of riscvprocessor.sv was successful.
-# Compile of rvsimtb.sv was successful.
-# Compile of top.sv was successful.
-# Compile of adder.sv was successful.
-# Compile of alu.sv was successful.
-# Compile of aludecoder.sv was successful.
-# Compile of controller.sv was successful.
-# 24 compiles, 0 failed with no errors.
-restart -f
-# Loading work.rvsimtb
-# Loading work.top
-# Loading work.riscvprocessor
-# Loading work.controller
-# Loading work.maindecoder
-# Loading work.aludecoder
-# Loading work.ctrlpiperegD_Ex
-# Loading work.ctrlpiperegEx_M
-# Loading work.ctrlpiperegM_W
-# Loading work.datapath
-# Loading work.mux2
-# Loading work.programcounter
-# Loading work.adder
-# Loading work.piperegF_D
-# Loading work.registerfile
-# Loading work.extendunit
-# Loading work.piperegD_Ex
-# Loading work.mux3
-# Loading work.alu
-# Loading work.piperegEx_M
-# Loading work.piperegM_W
-# Loading work.hazardunit
-# Loading work.instructionmem
-# Loading work.datamem
 run 150ps
 # Test started
 add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/pipregDEx/ImmExtD
-restart -f
-run 200ps
+sim:/rvsimtb/MemWriteM
+restart -f run 250ps
+run 250 ps
 # Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of extendunit.sv was successful.
@@ -219,6 +113,9 @@ run 200ps
 # Compile of alu.sv was successful.
 # Compile of aludecoder.sv was successful.
 # Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
 # 24 compiles, 0 failed with no errors.
 restart -f
 # Loading work.rvsimtb
@@ -245,17 +142,28 @@ restart -f
 # Loading work.hazardunit
 # Loading work.instructionmem
 # Loading work.datamem
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(63): Variable '/rvsimtb/dut/rv1/d/ImmExtD', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(102).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(59): Variable '/rvsimtb/dut/rv1/d/RD2D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(58): Variable '/rvsimtb/dut/rv1/d/RD1D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
+run 300ps
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/PCE
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/ImmExtE
+restart -f
 run 250ps
 # Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/ALUResultE
+restart -f
+run 250ps
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/d/PCJumpSrcE
+restart -f
+run 250ps
+# Test started
+restart -f 
+run 250ps
+# Test started
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of extendunit.sv was successful.
@@ -277,6 +185,9 @@ run 250ps
 # Compile of alu.sv was successful.
 # Compile of aludecoder.sv was successful.
 # Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
 # 24 compiles, 0 failed with no errors.
 restart -f
 # Loading work.rvsimtb
@@ -303,54 +214,8 @@ restart -f
 # Loading work.hazardunit
 # Loading work.instructionmem
 # Loading work.datamem
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(63): Variable '/rvsimtb/dut/rv1/d/ImmExtD', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(102).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(59): Variable '/rvsimtb/dut/rv1/d/RD2D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(58): Variable '/rvsimtb/dut/rv1/d/RD1D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-run 150ps
-# Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/InstrD
-restart -f
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(63): Variable '/rvsimtb/dut/rv1/d/ImmExtD', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(102).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(59): Variable '/rvsimtb/dut/rv1/d/RD2D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(58): Variable '/rvsimtb/dut/rv1/d/RD1D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
 run 250ps
 # Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/pipregFD/clear
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/pipregFD/PCD
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/pipregFD/PCPlus4D
-restart -f
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(63): Variable '/rvsimtb/dut/rv1/d/ImmExtD', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(102).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(59): Variable '/rvsimtb/dut/rv1/d/RD2D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(58): Variable '/rvsimtb/dut/rv1/d/RD1D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-run 250ps
-# Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/h/StallD
-restart -f
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(63): Variable '/rvsimtb/dut/rv1/d/ImmExtD', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(102).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(59): Variable '/rvsimtb/dut/rv1/d/RD2D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(58): Variable '/rvsimtb/dut/rv1/d/RD1D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-run 200ps
-# Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of extendunit.sv was successful.
@@ -372,6 +237,9 @@ run 200ps
 # Compile of alu.sv was successful.
 # Compile of aludecoder.sv was successful.
 # Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
 # 24 compiles, 0 failed with no errors.
 restart -f
 # Loading work.rvsimtb
@@ -398,15 +266,13 @@ restart -f
 # Loading work.hazardunit
 # Loading work.instructionmem
 # Loading work.datamem
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(63): Variable '/rvsimtb/dut/rv1/d/ImmExtD', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(102).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(59): Variable '/rvsimtb/dut/rv1/d/RD2D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# ** Warning: (vsim-3839) D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(58): Variable '/rvsimtb/dut/rv1/d/RD1D', driven via a port connection, is multiply driven. See D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv(99).
-#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/d File: D:/PERSONAL_PROJECTS/RISCV/src/datapath.sv
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
+run 200 ps
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/c/opcode
+restart -f
+run 250ps
+# Test started
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of extendunit.sv was successful.
@@ -428,6 +294,9 @@ restart -f
 # Compile of alu.sv was successful.
 # Compile of aludecoder.sv was successful.
 # Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
 # 24 compiles, 0 failed with no errors.
 restart -f
 # Loading work.rvsimtb
@@ -456,24 +325,153 @@ restart -f
 # Loading work.datamem
 run 200ps
 # Test started
-run 50 ps
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv failed with 2 errors.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 1 failed with 2 errors.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
 add wave -position insertpoint  \
 sim:/rvsimtb/dut/rv1/d/alu/AluA
 add wave -position insertpoint  \
 sim:/rvsimtb/dut/rv1/d/alu/AluB
 add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/alu/ALUControl
+sim:/rvsimtb/dut/rv1/d/RD1E
 restart -f
-run 250ps
-# Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/ALUControlD
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+# ** Error: (vsim-3063) D:/projects/RISCV/src/riscvprocessor.sv(23): Port 'PCJumpSrcE' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/c File: D:/projects/RISCV/src/controller.sv
+run 250 ps
+# No Design Loaded!
 restart -f
-run 250ps
-# Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
+# No Design Loaded!
+vsim work.rvsimtb
+# vsim work.rvsimtb 
+# Start time: 12:30:10 on Jul 27,2025
+# Loading sv_std.std
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+# ** Error: (vsim-3063) D:/projects/RISCV/src/riscvprocessor.sv(23): Port 'PCJumpSrcE' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/c File: D:/projects/RISCV/src/controller.sv
+# Error loading design
+# End time: 13:46:07 on Jul 27,2025, Elapsed time: 1:15:57
+# Errors: 2, Warnings: 1
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv failed with 1 errors.
+# Compile of ctrlpiperegD_Ex.sv failed with 2 errors.
 # Compile of ctrlpiperegEx_M.sv was successful.
 # Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 2 failed with 3 errors.
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of extendunit.sv was successful.
@@ -495,6 +493,199 @@ run 250ps
 # Compile of alu.sv was successful.
 # Compile of aludecoder.sv was successful.
 # Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.rvsimtb
+# vsim work.rvsimtb 
+# Start time: 13:55:37 on Jul 27,2025
+# Loading sv_std.std
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 250ps
+# Test started
+add wave -position insertpoint  \
+sim:/rvsimtb/dut/rv1/c/PCJumpSrcD
+restart -f
+run 200ps
+# Test started
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 200ps
+# Test started
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv failed with 2 errors.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 1 failed with 2 errors.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+# ** Warning: (vsim-3017) D:/projects/RISCV/src/riscvprocessor.sv(23): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /rvsimtb/dut/rv1/c File: D:/projects/RISCV/src/controller.sv
+# ** Warning: (vsim-3722) D:/projects/RISCV/src/riscvprocessor.sv(23): [TFMPC] - Missing connection for port 'PCJumpSrcE'.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
 # 24 compiles, 0 failed with no errors.
 restart -f
 # Loading work.rvsimtb
@@ -524,35 +715,12 @@ restart -f
 run 200ps
 # Test started
 add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/ALUOp
-restart -f
-run 250ps
-# Test started
+sim:/rvsimtb/dut/rv1/d/Rs1D
 add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/funct3
+sim:/rvsimtb/dut/rv1/d/RD1D
 restart -f
 run 200ps
 # Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/aludec/Rtype
-restart -f
-run 200ps
-# Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/aludec/funct7b5
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/aludec/funct3
-restart -f
-run 200ps
-# Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/c/aludec/opcodeb5
-restart -f
-run 200ps
-# Test started
-# Compile of ctrlpiperegD_Ex.sv was successful.
-# Compile of ctrlpiperegEx_M.sv was successful.
-# Compile of ctrlpiperegM_W.sv was successful.
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of extendunit.sv was successful.
@@ -574,6 +742,9 @@ run 200ps
 # Compile of alu.sv was successful.
 # Compile of aludecoder.sv was successful.
 # Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
 # 24 compiles, 0 failed with no errors.
 restart -f
 # Loading work.rvsimtb
@@ -600,24 +771,279 @@ restart -f
 # Loading work.hazardunit
 # Loading work.instructionmem
 # Loading work.datamem
-run 200ps
-# Test started
-run 50 ps
-run 50ps
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/PCTargetadd/a
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/PCTargetadd/b
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/PCTargetadd/y
-restart -f
 run 250ps
 # Test started
-add wave -position insertpoint  \
-sim:/rvsimtb/dut/rv1/d/PCTargetE
-# End time: 18:45:32 on Jul 08,2025, Elapsed time: 2:13:22
-# Errors: 4, Warnings: 19
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 250ps
+# Test started
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 300ps
+# Test started
+# Simulation succeeded
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(32)
+#    Time: 185 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 32
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 300ps
+# Test started
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 300ps
+# Test started
+# Simulation failed
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 245 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of extendunit.sv was successful.
+# Compile of flopenr.sv was successful.
+# Compile of hazardunit.sv was successful.
+# Compile of instructionmem.sv was successful.
+# Compile of maindecoder.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux3.sv was successful.
+# Compile of piperegD_Ex.sv was successful.
+# Compile of piperegEx_M.sv was successful.
+# Compile of piperegF_D.sv was successful.
+# Compile of piperegM_W.sv was successful.
+# Compile of registerfile.sv was successful.
+# Compile of riscvprocessor.sv was successful.
+# Compile of rvsimtb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludecoder.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of ctrlpiperegD_Ex.sv was successful.
+# Compile of ctrlpiperegEx_M.sv was successful.
+# Compile of ctrlpiperegM_W.sv was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.rvsimtb
+# Loading work.top
+# Loading work.riscvprocessor
+# Loading work.controller
+# Loading work.maindecoder
+# Loading work.aludecoder
+# Loading work.ctrlpiperegD_Ex
+# Loading work.ctrlpiperegEx_M
+# Loading work.ctrlpiperegM_W
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.programcounter
+# Loading work.adder
+# Loading work.piperegF_D
+# Loading work.registerfile
+# Loading work.extendunit
+# Loading work.piperegD_Ex
+# Loading work.mux3
+# Loading work.alu
+# Loading work.piperegEx_M
+# Loading work.piperegM_W
+# Loading work.hazardunit
+# Loading work.instructionmem
+# Loading work.datamem
+run 300ps
+# Test started
+# Simulation failed
+# ** Note: $stop    : D:/projects/RISCV/src/rvsimtb.sv(35)
+#    Time: 245 ps  Iteration: 1  Instance: /rvsimtb
+# Break in Module rvsimtb at D:/projects/RISCV/src/rvsimtb.sv line 35
+# End time: 14:43:04 on Jul 27,2025, Elapsed time: 0:47:27
+# Errors: 0, Warnings: 2

@@ -1,6 +1,6 @@
 // hazardunit h( );
 module hazardunit(input  logic [4:0] Rs1D, Rs2D, Rs1E, Rs2E, RdE, RdM, RdW,
-				  input  logic 		 ResultSrcE0, RegWriteM, RegWriteW,
+				  input  logic 		 ResultSrcE0, RegWriteE, RegWriteM, RegWriteW,
 				  input  logic       PCSrcE,
 				  output logic 		 StallF, StallD, FlushD, FlushE,
 				  output logic [1:0] ForwardAE, ForwardBE);
@@ -24,14 +24,26 @@ module hazardunit(input  logic [4:0] Rs1D, Rs2D, Rs1E, Rs2E, RdE, RdM, RdW,
 			ForwardBE = 2'b00;
 	end	
 
-	// Stalling
-	// assign lwStall = (ResultSrcE0 && (((^Rs2D !== 1'bx) && (RdE == Rs1D)) | ((^Rs2D !== 1'bx) && (RdE == Rs2D))));	// Checks if lw instruction is currently in Execute stage, and if destination register matches source registers in Decode stage
-	assign lwStall = (ResultSrcE0 && (RdE inside {Rs1D, Rs2D}));
-	assign StallF = lwStall;									// Stalls fetch stage by one cycle so data can be moved to destination register  
-	assign StallD = lwStall;									// Stalls decode stage by one cycle so data can be moved to destination register 
 	
-	assign FlushD = PCSrcE;										// Assume branch not taken, if taken, FlushD and FlushE
-	assign FlushE = PCSrcE | lwStall;							// FlushE if lwStall or branch misprediction penalty	
+	
+	// Checks if lw instruction is currently in Execute stage, and if destination register matches source registers in Decode stage
+	// Check if RegWrite is enabled, if not Rd will be X
+	always_comb begin
+		if (RegWriteE && ResultSrcE0) begin
+			lwStall = (RdE inside {Rs1D, Rs2D});
+		end
+		else begin
+			lwStall = 0;
+		end
+		StallF = lwStall;			// Stalls fetch stage by one cycle so data can be moved to destination register  
+		StallD = lwStall;			// Stalls decode stage by one cycle so data can be moved to destination register
+		FlushD = PCSrcE;							// Assume branch not taken, if taken, FlushD and FlushE
+		FlushE = PCSrcE | lwStall;					// FlushE if lwStall or branch misprediction penalty	
+	end
+
+	
+	
+	
 	
 endmodule
 

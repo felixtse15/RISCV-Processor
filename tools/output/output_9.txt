@@ -1,0 +1,27 @@
+INSTRNM: 20
+571D0F13, PC: 0, arithmetic immediate instruction!
+addi 30, 26, 1393: [30] = 1393
+308F0B93, PC: 4, arithmetic immediate instruction!
+addi 23, 30, 776: [23] = 2169
+66BC0913, PC: 8, arithmetic immediate instruction!
+addi 18, 24, 1643: [18] = 1643
+11CDAD97, PC: 12, auipc instruction!
+auipc 27, 72922Stored auipc: 72934
+02000AEF, PC: 16, jal instruction!
+Jump target address: 48
+30948493, PC: 48, arithmetic immediate instruction!
+addi 9, 9, 777: [9] = 777
+278C0A93, PC: 52, arithmetic immediate instruction!
+addi 21, 24, 632: [21] = 632
+0004D993, PC: 56, arithmetic immediate instruction!
+srli 19, 9, 0: [19] = 777
+0C902223, PC: 60, sw instruction!
+sw 9, 196(0), 777 stored at adr 196
+76500C93, PC: 64, arithmetic immediate instruction!
+addi 25, 0, 1893: [25] = 1893
+7ABA6B93, PC: 68, arithmetic immediate instruction!
+ori 23, 20, 1963: [23] = 1963
+07602623, PC: 72, sw instruction!
+sw 22, 108(0), 0 stored at adr 108
+0B502423, PC: 76, sw instruction!
+sw 21, 168(0), 632 stored at adr 168

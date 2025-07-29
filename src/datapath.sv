@@ -59,7 +59,7 @@ module datapath(input  logic        clk, reset,
 				RdD  = InstrD[11:7];
 			end
 		
-			3, 19: begin														// I-type instructions
+			3, 19, 103: begin														// I-type instructions
 				Rs1D = InstrD[19:15];
 				Rs2D = 5'bxxxxx;
 				RdD  = InstrD[11:7];
@@ -71,11 +71,12 @@ module datapath(input  logic        clk, reset,
 				RdD  = 5'bxxxxx;
 			end
 		
-			23, 55, 111: begin
+			23, 55, 111: begin													// auipc, lui, jal
 				Rs1D = 5'bxxxxx;
 				Rs2D = 5'bxxxxx;
 				RdD  = InstrD[11:7];
 			end
+		
 	
 			default: begin
 				Rs1D = 5'bxxxxx;
