@@ -26,7 +26,9 @@ to support verification and automate workflows.
 
 ![Verification in ModelSim](documentation/verification.png)
   
-
+# Instructions
+The following highlighted instructions are currently supported in this processor:
+![Instructions Implemented](documentation/instructions.jpeg/png)
 
 # Upcoming Changes
 - Overflow handling
