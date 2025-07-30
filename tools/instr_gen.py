@@ -45,16 +45,16 @@ import time
 
 
 # Some constants and global variables
-INSTR_WEIGHTS = [20, 7, 6, 1, 1, 2, 1, 1, 1,]
-INSTR_TYPES = ['arithmeticimm', 'register', 'sw', 'lui', 'auipc', 'branch','jalr', 'jal', 'lw']
-ARITHMETICIMM = ['addi', 'slli', 'slti', 'sltiu', 'xori', 'srli', 'ori', 'andi']
-REGISTER = ['add', 'sll', 'slt', 'sltu', 'xor', 'srl', 'or', 'and']
-BRANCH = ['beq', 'bne', 'ERROR', 'ERROR', 'blt', 'bge']
-INSTRNUM = 20               # Number of instructions generated
-LOC_REG_LIST = []           # Stores registers that have recently been written to
-LOC_MEM_LIST = []           # List of a list, stores combinations of imm and rs1, effectively stores a memory address
-IS_ITYPE = True             # Flag for checking whether or not to read from LOC_REG_LIST
-SW_OCCURRED = False         # Flag for checking whether LOC_MEM_LIST is non-empty
+INSTR_WEIGHTS     = [20, 7, 6, 1, 1, 2, 1, 1, 1,]                    # Immediate and register instructions more likely than jal and lw
+INSTR_TYPES       = ['arithmeticimm', 'register', 'sw', 'lui', 'auipc', 'branch','jalr', 'jal', 'lw']
+ARITHMETICIMM     = ['addi', 'slli', 'slti', 'sltiu', 'xori', 'srli', 'ori', 'andi']
+REGISTER          = ['add', 'sll', 'slt', 'sltu', 'xor', 'srl', 'or', 'and']
+BRANCH            = ['beq', 'bne', 'ERROR', 'ERROR', 'blt', 'bge']
+INSTRNUM          = 20                                               # Number of instructions generated
+LOC_REG_LIST      = []                                               # Stores registers that have recently been written to
+LOC_MEM_LIST      = []                                               # List of a list, stores combinations of imm and rs1, effectively stores a memory address
+IS_ITYPE          = True                                             # Flag for checking whether or not to read from LOC_REG_LIST
+SW_OCCURRED       = False                                            # Flag for checking whether LOC_MEM_LIST is non-empty
 
 
 
@@ -63,14 +63,18 @@ SW_OCCURRED = False         # Flag for checking whether LOC_MEM_LIST is non-empt
 # Return a list containing INSTRNUM - 2 types of instructions, generated based on weighted possibilities
 def rand_type(state):
     global SW_OCCURRED
+    
     if (SW_OCCURRED == True) and (state['pc'] <= 68):         
         type = random.choices(INSTR_TYPES, INSTR_WEIGHTS, k = 1)[0]
+        
     elif ((SW_OCCURRED == False) and (state['pc'] <= 68)):
         # Exclude lw instruction and its weight until sw has occurred
         type = random.choices(INSTR_TYPES[0:8], INSTR_WEIGHTS[0:8], k = 1)[0]
+        
     else:    
         # Exclude jump and branch instructions if there are only two instructions left
-        type = random.choices(INSTR_TYPES[0:4], INSTR_WEIGHTS[0:4], k = 1)[0]       
+        type = random.choices(INSTR_TYPES[0:4], INSTR_WEIGHTS[0:4], k = 1)[0]   
+        
     return type
 
 
@@ -78,22 +82,28 @@ def rand_type(state):
 # For upper immediate, debugging prints commented out
 def to_sigbin(num):
     # print('to_sigbin num', num)
+    
     if num < 0:
         flipped = ~num & ((1 << 20) -1)
         binary_num = (flipped + 1) & ((1 << 20) - 1)
         binary_string = format(binary_num, f'0{20}b')
+        
     else:
         binary_string = format(num, '020b') 
+        
     return binary_string
 
 
 # For converting back from signed numbers
 def from_sigbin(string):
     # print('from_sigbin string = ', string)
+    
     bits = len(string) 
     value = int(string, 2)
+    
     if string[0] == '1':
         value -= (1 << bits)
+        
     return value
 
 
@@ -101,10 +111,13 @@ def from_sigbin(string):
 def rand_reg():
     global IS_ITYPE
     flag = IS_ITYPE
+    
     # print('rand reg flag = ', flag)
+    
     if not flag:
         r = random.choice(LOC_REG_LIST)
         return r
+        
     else:
         r = random.choice([0, 8, 9] + list(range(18, 31)))
         return(format(r, '05b'))
@@ -114,8 +127,10 @@ def rand_reg():
 # Return a random register number not including 0 for register destination
 def rand_rd():
     rd = '00000'
+    
     while rd == '00000':
         rd = rand_reg()
+        
     return rd
 
 
@@ -123,20 +138,22 @@ def rand_rd():
 # Return a random funct3
 def rand_funct3():
     n = random.randint(0,7)
+    
     return(format(n, '03b'))
 
 
 
 # Return random unsigned 12-bit immediate
 def rand_imm():
-    
     n = random.choice(list(range(0, 2048)))
+    
     return(format(n, '012b'))
 
 
 # Return random unsigned immediate for sw
 def rand_mem_imm():
     n = random.choice(list(range(0, 257, 4)))
+    
     return(format(n, '012b'))
 
 
@@ -144,6 +161,7 @@ def rand_mem_imm():
 # Return random unsigned 5-bit immediate
 def rand_shift_imm():
     n = random.choice(list(range(0, 32)))
+    
     return(format(n, '05b'))
 
 
@@ -157,6 +175,7 @@ def rand_branch_imm(state):
     
     if (state['pc'] > ((4 * (INSTRNUM - 2)) - 16)):
         n = ((4 * (INSTRNUM - 2) - state['pc']))
+        
     else:
         while ((n + state['pc']) > (4 * (INSTRNUM - 1))):
             n = random.choice(fourmultiples)
@@ -173,6 +192,7 @@ def rand_jalr_imm(state):
     if (state['pc'] + 16) < 76:
         while (n <= (state['pc'] + 16)):
             n = random.choice(fourmultiples)
+            
     else:
         n = ((4 * (INSTRNUM - 2)))
         
@@ -184,8 +204,10 @@ def rand_jalr_imm(state):
 def rand_jal_imm(state):
     fourmultiples = list(range(16, (4 * (INSTRNUM - 1)) + 1, 4))
     n = random.choice(fourmultiples)
+    
     if (state['pc'] > ((4 * (INSTRNUM - 2)) - 16)):
         n = ((4 * (INSTRNUM - 2) - state['pc']))
+        
     else:
         while ((n + state['pc']) > (4 * (INSTRNUM - 1))):
             n = random.choice(fourmultiples)
@@ -198,6 +220,7 @@ def rand_jal_imm(state):
 def rand_upp_imm():
     n = random.choice(list(range(-262144, 262144)))
     # print(n)
+    
     return(to_sigbin(n))
 
 
@@ -213,14 +236,17 @@ def generate_arithmetic_instr():
     # Assign funct7 if possible
     if funct3 == '001':
         funct7 = '0000000'
+        
     elif funct3 == '101':
         funct7 = random.choice(['0000000', '0000001'])
+        
     else:
         funct7 = ''
     
     # Randomly assign immediate value within range
     if funct7 in('0000000', '0000001'):
         immediate = rand_shift_imm()
+        
     else:
         immediate = rand_imm()
 
@@ -241,10 +267,12 @@ def generate_arithmetic_instr():
     if index == 5:
         if funct7 == '0000000':
             name = ARITHMETICIMM[index]
+            
         else:
             name = 'srai'
 
     print(name, int(rd, 2), int(rs1, 2), int(immediate,2), IS_ITYPE) 
+    
     return instr
 
 
@@ -265,8 +293,10 @@ def generate_register_instr():
     # Assign funct7
     if funct3 == '000':
         funct7 = random.choice(['0000000', '0100000'])
+        
     elif funct3 == '101':
         funct7 = random.choice(['0000000', '0100000'])
+        
     else:
         funct7 = '0000000'
     
@@ -286,11 +316,14 @@ def generate_register_instr():
     if index == 0:
         if funct7 == '0000000':
             name = REGISTER[index]
+            
         else:
             name = 'sub'
+            
     elif index == 5:
         if funct7 == '0000000':
             name = REGISTER[index]
+            
         else:
             name = 'sra'
     
@@ -349,19 +382,25 @@ def generate_jump_instr(instr_type, state):
         funct3 = '000'
         rs1 = '00000'
         rd = rand_rd()
+        
         if rd not in LOC_REG_LIST:
             LOC_REG_LIST.append(rd)
+            
         imm = rand_jalr_imm(state)
         instr = imm + rs1 + funct3 + rd + opcode
         print('jalr', int(rd, 2), int(rs1, 2), int(imm, 2), IS_ITYPE)
+        
     elif instr_type == 'jal':
         opcode = '1101111'
         rd = rand_rd()
+        
         if rd not in LOC_REG_LIST:
             LOC_REG_LIST.append(rd)
+            
         imm = rand_jal_imm(state)
         instr = imm[0] + imm[10:20] + imm[9] + imm[1:9] + rd + opcode
         print('jal', int(rd, 2), int(imm, 2), IS_ITYPE)     # This is an exception
+        
     else:
         printf('Error finding jump instruction')
 
@@ -374,11 +413,14 @@ def generate_lw_instr():
     imm = rand_mem_loc[0]
     rs1 = rand_mem_loc[1]
     rd = rand_rd()
+    
     if rd not in LOC_REG_LIST:
         LOC_REG_LIST.append(rd)
+        
     funct3 = '010'
     instr = imm + rs1 + funct3 + rd + opcode
     print('lw', int(rd, 2), int(imm, 2), '(', int(rs1, 2), ')', IS_ITYPE)
+    
     return instr
 
 
@@ -391,10 +433,10 @@ def generate_sw_instr():
     global IS_ITYPE
     global SW_OCCURRED
     IS_ITYPE = False
+    
     if SW_OCCURRED == False:
         SW_OCCURRED = True
     
-
     opcode = '0100011'
     funct3 = '010'
     
@@ -405,13 +447,13 @@ def generate_sw_instr():
     imm = rand_mem_imm()
     rs1 = '00000'
 
-
     LOC_MEM_LIST.append([imm, rs1])
     
     # From C based indexing to python based indexing: [x, y] in C where z is total number of bits, in Python is [z - a - 1, z - b]
     instr = imm[0:7] + rs2 + rs1 + funct3 + imm[7:12] + opcode
     print('sw', int(rs2, 2), int(imm, 2), '(', int(rs1, 2), ')', IS_ITYPE)
     IS_ITYPE = True
+    
     return instr
 
 
@@ -420,16 +462,19 @@ def generate_sw_instr():
 def generate_upperimm_instr(instr_type):
     if instr_type == 'lui':
         opcode = '0110111'
+        
     elif instr_type == 'auipc':
         opcode = '0010111'
+        
     else:
         print('Error finding upperimm instruction')
     
     rd = rand_rd()
+    
     if rd not in LOC_REG_LIST:
         LOC_REG_LIST.append(rd)
+        
     upimm = rand_upp_imm()
-
     instr = upimm + rd + opcode
     print(instr_type, int(rd, 2), from_sigbin(upimm), IS_ITYPE)
     
@@ -463,6 +508,7 @@ def encode_instruction(instr_type, state):
 def bin_to_hex(bin_instr):
     num = int(bin_instr, 2)
     hex_str = format(num, '08X')
+    
     return(hex_str)
 
 
@@ -474,8 +520,10 @@ def main():
     random.seed(int(time.time()))
     print('starting main')
     state = {'pc': 0};
+    
     for i in range(10):
         print("Run", i+1, "***************\n");
+        
         with open(f"/mnt/d/projects/RISCV/tools/input/input_{i+1}.txt", 'w') as f:     
         
             # Guarantee that the first instruction is arithmetic imm
@@ -483,6 +531,7 @@ def main():
             f.write(bin_to_hex(instr) + '\n')
             print('Instr 01', 'hex', bin_to_hex(instr))
             state['pc'] = 4;
+            
             for i in range(INSTRNUM - 2):
                 instr = encode_instruction(rand_type(state), state)
                 instr = bin_to_hex(instr)
@@ -495,14 +544,7 @@ def main():
             # Guarantee that final instruction is sw for debugging later
             instr = generate_sw_instr()                                                
             f.write(bin_to_hex(instr) + '\n')
-            print('Instr', INSTRNUM, 'hex', bin_to_hex(instr))
-        
-     
+            print('Instr', INSTRNUM, 'hex', bin_to_hex(instr))         
 
-    
 if __name__ == '__main__':
     main()
-
-
-
-
