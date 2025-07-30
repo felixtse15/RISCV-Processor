@@ -30,7 +30,7 @@ void reg(cpu_t *state, uint32_t instr) {
 			printf("sll %d, %d, %d: ", rd, rs1, rs2);
 			break;
 		case 2:
-			state->rfile[rd] = ((int32_t)state->rfile[rs1] < (int32_t)state->rfile[rs2]);		// slt
+			state->rfile[rd] = ((int32_t)state->rfile[rs1] < (int32_t)state->rfile[rs2]);					// slt
 			printf("slt %d, %d, %d: ", rd, rs1, rs2);
 			break;
 		case 3:																					
@@ -43,12 +43,12 @@ void reg(cpu_t *state, uint32_t instr) {
 			break;
 		case 5:
 			if (funct7 == 0) {
-				state->rfile[rd] = (state->rfile[rs1] >> state->rfile[rs2]);					// srl
+				state->rfile[rd] = (state->rfile[rs1] >> state->rfile[rs2]);						// srl
 				printf("srl %d, %d, %d: ", rd, rs1, rs2);
 				break;
 			}
 			else {
-				state->rfile[rd] = ((int32_t)state->rfile[rs1] >> state->rfile[rs2]);			// sra
+				state->rfile[rd] = ((int32_t)state->rfile[rs1] >> state->rfile[rs2]);					// sra
 				printf("sra %d, %d, %d: ", rd, rs1, rs2);
 				break;	
 			}
@@ -102,7 +102,7 @@ void imm(cpu_t *state, uint32_t instr) {
 				break;
 			}
 			else {
-				state->rfile[rd] = ((int32_t)state->rfile[rs1] >> (uint32_t)imm);	// srai
+				state->rfile[rd] = ((int32_t)state->rfile[rs1] >> (uint32_t)imm);		// srai
 				printf("srai %d, %d, %d: ", rd, rs1, imm);
 				break;	
 			}
