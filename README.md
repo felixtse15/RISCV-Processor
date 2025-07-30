@@ -28,7 +28,7 @@ to support verification and automate workflows.
   
 # Instructions
 The following highlighted instructions are currently supported in this processor:
-![Instructions Implemented](documentation/instructions.jpeg/png)
+![Instructions Implemented](documentation/instructions.jpeg.png)
 
 # Upcoming Changes
 - Overflow handling
