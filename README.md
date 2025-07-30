@@ -24,7 +24,7 @@ to support verification and automate workflows.
 - tools/search_file.sh: run this shell script in the src/ directory to recursively search files for keywords
 - To verify processor in ModelSim, update the file being read in src/instructionmem.sv and update ALUM and WriteDataM values in src/rvsimtb.sv for each run. A TCL script is in development to automate this process
 
-![Verification in ModelSim]
+![Verification in ModelSim](documentation/verification.png)
   
 
 
