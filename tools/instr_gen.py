@@ -24,12 +24,11 @@
 #
 # v2: It is practical to increase temporal locality by reading from registers and memory addresses that have recently been written to. To implement this, 
 # two global arrays are added to the program to keep track of registers and memory locations that were written to. When a lw or sw instruction is 
-# generated, the registers and memory locations, accordingly, will be selected from these arrays instead. I changed it so that all instructions besides
+# generated, the registers and memory locations, accordingly, will be selected from these arrays instead. All instructions besides
 # immediate types will draw from these arrays, since immediates *almost always guarantee that a value other than 0 will be written. In order to guarantee 
-# that the array will have at least one value before being drawn from, the first instruction must be a immediate type instruction. Also for the testbench,
-# the last instruction should be a sw instruction. 
-# I should also further increase the probability of immediate type instructions. I also included jal and upper as exceptions since they only write to rd. 
-# Additionally, to adhere to temporal locality, lw will not be generated until at least one sw instruction has generated. 
+# that the array will have at least one value before being drawn from, the first instruction must be a immediate type instruction and the last instruction 
+# should be a sw instruction. Included jal and upper as exceptions since they only write to rd. Additionally, to adhere to temporal locality, lw will not
+# be generated until at least one sw instruction has generated. 
 #
 #
 # v1: Generates a random list of 16 types of instructions, where immediates and register types are weighted more heavily than others. 
