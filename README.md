@@ -12,6 +12,9 @@ to support verification and automate workflows.
 # Microarchitecture
 ![Microarchitecture diagram](documentation/microarchitecture.jpg)
 
+# Cycles Per Instruction
+![CPI over 10 Tests](documentation/cpi.png)
+
 # Upcoming Changes
 - Overflow handling
 - Illegal/incorrect instruction handling
