@@ -57,9 +57,3 @@ int main(int args, char **argv) {
 	return 0;
 }
 
-//  I update pc in the for loop. Each time i loop, i call decode_instr. in the for loop, check if pc has
-// been changed in decode_instr.
-/* Execute instruction number (program counter/4) 
-
-
-*/
