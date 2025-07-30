@@ -1,6 +1,6 @@
 # RISC-V Processor
 A 5-stage pipelined processor implemented in SystemVerilog and simulated in ModelSim. Additional Python, C, and Bash scripts
-to support development.
+to support verification and automate workflows.
 
 # Features
 - 32-bit Instruction
