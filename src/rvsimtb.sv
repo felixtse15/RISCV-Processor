@@ -29,11 +29,13 @@ module rvsimtb();
 	// generate clock to sequence tests
 	always begin
 		clk <= 1;
-		cycles +=1;
 		#5;
 		clk <= 0;
 		#5;
 	end
+	
+	always @(posedge clk)
+		cycles <= cycles + 1;
 	
 	// automatically check output
 	always @(negedge clk) begin
